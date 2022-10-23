@@ -1,2 +1,1 @@
-# simple_web
- Web for VQ
+# Final project for Knowledge Representation

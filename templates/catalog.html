@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %}
+    Tìm kiếm
+{% endblock %}
+{% block content %}
+<div class="row" style="margin-top:20px; margin-left:20px; margin-right:20px">
+    <div class="col">
+        <h2>Danh mục sản phẩm</h2>
+    </div>
+</div>
+<div class="row" id="shirtCard">
+    {% for i in range(productsLen) %}
+        <div class="col-xl-4">
+            <div class="card text-center" style="padding-left: 50px padding-right: 50px">
+                <div class="card-body">
+                    <img src="/static/asset/{{products[i]["image"]}}" class="product" alt=""/>
+                    <h5 class="card-title">{{products[i]["name"]}}</h5>
+                    <h5 class="card-title">{{products[i]["price"]}}</h5>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+    </div>
+
+
+
+{% endblock %}
