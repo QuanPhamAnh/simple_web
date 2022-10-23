@@ -11,11 +11,16 @@
 <div class="row" id="shirtCard">
     {% for i in range(productsLen) %}
         <div class="col-xl-4">
-            <div class="card text-center" style="padding-left: 50px padding-right: 50px">
+            <div class="card text-center" style="padding-left: 50px; padding-right: 50px">
                 <div class="card-body">
                     <img src="/static/asset/{{products[i]["image"]}}" class="product" alt=""/>
                     <h5 class="card-title">{{products[i]["name"]}}</h5>
                     <h5 class="card-title">{{products[i]["price"]}}</h5>
+                    <br>
+                    <p> {{ products[i]["desc"] }}</p>
+                    <div class='buttons'>
+                        <a href="{{ url_for('product_page_01') }}" class="readme">Chi tiết</a>
+                    </div>
                 </div>
             </div>
         </div>

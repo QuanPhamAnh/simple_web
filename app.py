@@ -49,35 +49,35 @@ def about_page():
 
 @app.route('/product/01', methods=['GET', 'POST'])
 def product_page_01():
-    return render_template('product01.html')
+    return render_template('product_01.html')
 
 @app.route('/product/02', methods=['GET', 'POST'])
 def product_page_02():
-    return render_template('product02.html')
+    return render_template('product_02.html')
 
 @app.route('/product/03', methods=['GET', 'POST'])
 def product_page_03():
-    return render_template('product03.html')
+    return render_template('product_03.html')
 
 @app.route('/product/04', methods=['GET', 'POST'])
 def product_page_04():
-    return render_template('product04.html')
+    return render_template('product_04.html')
 
 @app.route('/product/05', methods=['GET', 'POST'])
 def product_page_05():
-    return render_template('product05.html')
+    return render_template('product_05.html')
 
 @app.route('/product/06', methods=['GET', 'POST'])
 def product_page_06():
-    return render_template('product06.html')
+    return render_template('product_06.html')
 
 @app.route('/product/07', methods=['GET', 'POST'])
 def product_page_07():
-    return render_template('product07.html')
+    return render_template('product_07.html')
 
 @app.route('/product/08', methods=['GET', 'POST'])
 def product_page_08():
-    return render_template('product08.html')
+    return render_template('product_08.html')
 
 #Checks if the app.py file has executed directly and not imported
 if __name__ == '__main__':
